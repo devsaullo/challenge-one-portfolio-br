@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+:root {
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-azul: #4fbde922;
+    --cor-de-link: #000;
+    --margin-default: 0 60px 60px;
+    --padding-default: 0 60px;
+    --margin-def-mb: 0 10px 20px;
+    --padding-def-mb: 0 10px;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #88888888;
+    border-radius: 5px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol,
+ul,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+/*Sessão Menu*/
+
+section.menu {
+    margin: var(--margin-default);
+    padding: var(--padding-default);
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.menu header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+section.menu nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 15px;
+}
+
+section.menu nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.menu nav li {
+    padding: 20px;
+}
+
+
+/*Sessão Title*/
+
+section.title {
+    display: flex;
+    margin: var(--margin-default);
+    padding: var(--padding-default);
+    height: 75vh;
+}
+
+section .title__div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.title__profile {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+section .title__container {
+    display: flex;
+    flex-direction: column;
+}
+
+section .title__subsection {
+
+    font-size: 18pt;
+    font-weight: 500;
+    word-break: keep-all;
+    width: 50%;
+    line-height: 4vh;
+}
+
+section .title__bio {
+    word-wrap: break-word;
+    font-size: 42px;
+}
+
+section .title__network {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/*Sessão About*/
+
+section.about {
+    display: flex;
+    background-color: var(--cor-de-fundo-azul);
+    height: 50rem;
+    margin: 0 0 60px;
+}
+
+section .about__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 60px;
+    padding: var(--padding-default);
+}
+
+section .about__title {
+    font-size: 20pt;
+}
+
+section .about__paragraph {
+    text-align: justify;
+    font-size: 14pt;
+}
+
+/* Sessão Habilidades*/
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-default);
+    margin: var(--margin-default);
+    gap: 1rem;
+}
+
+section .skills__title {
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .skills__line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .skills__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    background-color: #e9e9e9b5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-default);
+    margin: var(--margin-default);
+    gap: 1rem;
+}
+
+section .hobbies__title {
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .hobbies__line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .hobbies__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    background-color: #e9e9e9b5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic {
+    height: 80vh;
+    background-color: var(--cor-de-fundo-azul);
+}
+
+.academic__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-default);
+    margin: var(--margin-default);
+
+}
+
+section .academic__title {
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .academic__courses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+section .academic__courses__item__img {
+    width: 200px;
+    height: 200px;
+}
+
+/* experiência*/
+
+section.experience {
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-default);
+    padding: var(--padding-default);
+}
+
+/*Contato*/
+
+section.formcontato {
+    display: flex;
+    margin: var(--margin-default);
+    padding: var(--padding-default);
+}
+
+/*footeer*/
+
+section.footer {
+    color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
+    background-color: #2e2e2e;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    section.menu {
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+
+    section.menu .menu__list {
+        display: none;
+    }
+
+    section.title {
+        margin: 0 20px 40px;
+        padding: 0 20px;
+        height: fit-content;
+    }
+
+    section .title__bio {
+        font-size: 24pt;
+    }
+
+    section .title__profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    section .title__subsection {
+        line-height: normal;
+        font-size: 12pt;
+        width: 100%;
+    }
+
+    section.about {
+        height: fit-content;
+        margin: 0;
+    }
+
+    section .about__container {
+        margin: 0 20px 30px;
+        padding: 0 20px;
+    }
+
+    section.skills {
+        margin: 0 20px 30px;
+        padding: 0 20px;
+    }
+
+    section .skills__line {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    section .skills__box {
+        width: calc((100% - 3rem) / 3);
+        max-width: calc(33.33% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    section.hobbies {
+        margin: 0 20px 40px;
+        padding: 0 20px;
+    }
+
+    section .hobbies__line {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    section .hobbies__box {
+        width: calc((100% - 3rem) / 3);
+        max-width: calc(33.33% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    section.academic {
+        height: fit-content;
+    }
+
+    section .academic__container {
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+
+    footer.footer {
+        height: fit-content !important;
+    }
+
+    footer .footer__rodape {
+        margin: 0 20px;
+        padding: 0 20px;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 767px) {
+
+
+    section.menu {
+        margin: 0 10px 30px;
+        padding: 0 10px;
+    }
+
+    section.menu .menu__list {
+        display: none;
+    }
+
+    section.title {
+        margin: 0 10px 30px;
+        padding: var(--padding-def-mb);
+        height: fit-content;
+    }
+
+    section .title__div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    section .title__bio {
+        font-size: 8pt;
+        text-align: center;
+    }
+
+    section .title__container {
+        width: 100%;
+    }
+
+    section .title__profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    section .title__subsection {
+        line-height: normal;
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    section .title__network {
+        font-size: 9pt;
+        width: 100%;
+    }
+
+    section.about {
+        height: fit-content;
+        margin: 0;
+    }
+
+    section .about__container {
+        margin: var(--margin-def-mb);
+        padding: var(--padding-def-mb);
+    }
+
+    section .about__title {
+        text-align: center;
+    }
+
+    section .about__paragraph {
+        font-size: 12pt;
+    }
+
+    section.skills {
+        margin: var(--margin-def-mb);
+        padding: var(--padding-def-mb);
+    }
+
+    section .skills__line {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    section .skills__box {
+        height: 8rem;
+        width: calc((100% - 2rem) / 2);
+        max-width: calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+
+    section.hobbies {
+        margin: 0 10px 30px;
+        padding: var(--padding-def-mb);
+    }
+
+    section .hobbies__line {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    section .hobbies__box {
+        height: 8rem;
+        width: calc((100% - 2rem) / 2);
+        max-width: calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    section.academic {
+        height: fit-content;
+    }
+
+    section .academic__container {
+        margin: 0 10px;
+        padding: var(--padding-def-mb);
+    }
+
+    section .academic__courses {
+
+    }
+
+    footer.footer {
+        height: fit-content !important;
+    }
+
+    footer .footer__rodape {
+        margin: 0;
+        padding: 0;
+    }
+
+}
