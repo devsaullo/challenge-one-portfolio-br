@@ -31,6 +31,10 @@
     border-radius: 5px;
 }
 
+h3 {
+    color: #2e2e2ee9;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -106,7 +110,7 @@ section .title__div {
     gap: 1rem;
 }
 
-.title__profile {
+section .title__profile {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -165,6 +169,11 @@ section .about__paragraph {
 
 /* Sessão Habilidades*/
 
+.icons_grid_box {
+    width: 30px;
+    height: 30px;
+}
+
 section.skills {
     display: flex;
     flex-direction: column;
@@ -197,7 +206,7 @@ section .skills__box {
     height: 12rem;
     border-radius: 10px;
     background-color: #e9e9e9b5;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: #0000003d 0px 3px 8px;
 }
 
 /*Sessão Hobbies*/
@@ -244,7 +253,7 @@ section.academic {
     background-color: var(--cor-de-fundo-azul);
 }
 
-.academic__container {
+section .academic__container {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -269,6 +278,8 @@ section .academic__courses {
     text-align: center;
     gap: 2rem;
 }
+
+
 
 section .academic__courses__item__img {
     width: 200px;
@@ -302,7 +313,9 @@ section.footer {
     align-items: center;
     text-align: center;
     height: 15vh;
-    background-color: #2e2e2e;
+    color: #2e2e2e;
+    background-color: #2e2e2e0e;
+    font-weight: 500;
 }
 
 
@@ -515,10 +528,6 @@ section.footer {
     section .academic__container {
         margin: 0 10px;
         padding: var(--padding-def-mb);
-    }
-
-    section .academic__courses {
-
     }
 
     footer.footer {
