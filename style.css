@@ -419,7 +419,6 @@ section.footer {
 /*Mobile*/
 @media (max-width: 767px) {
 
-
     section.menu {
         margin: 0 10px 30px;
         padding: 0 10px;
@@ -456,6 +455,7 @@ section.footer {
     }
 
     section .title__subsection {
+        text-align: justify;
         line-height: normal;
         width: 100%;
         font-size: 10pt;
